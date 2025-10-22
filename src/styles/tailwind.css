@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 扩展少量全局样式 */
+:root{
+  --adventure-brown: #8B4513;
+  --adventure-sand: #F5DEB3;
+  --adventure-sea: #1E90FF;
+  --adventure-forest: #228B22;
+  --adventure-temple: #D2691E;
+  --adventure-treasure: #FFD700;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, Arial, "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  background: var(--adventure-sand);
+}
+
+/* 你原来的一些动画可以在这里增加 */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.float { animation: float 6s ease-in-out infinite; }
